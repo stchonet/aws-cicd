@@ -5,7 +5,8 @@ pipeline {
    BRANCH_NAME = 'main'
    GIT_URL = 'https://github.com/stchonet/aws-cicd.git' 
    IMAME_TAG = 'stchonet/aws-cicd'
-   IMAGE_VERSION = ${BUILD_NUMBER}
+   IMAGE_VERSION = "${BUILD_NUMBER}"
+
   }
 stages{
     stage('git checkout'){
